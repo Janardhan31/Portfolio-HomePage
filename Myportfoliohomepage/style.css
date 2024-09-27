@@ -1,0 +1,109 @@
+/* styles.css */
+
+/* Typography */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: aquamarine;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+/* Layout */
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+section {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about {
+    grid-column: 1 / -1;
+}
+
+.education {
+    grid-column: 1 / -1;
+}
+
+.projects {
+    grid-column: 1 / -1;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 20px;
+}
+
+li:last-child {
+    margin-bottom: 0;
+}
+
+/* Colors */
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #f1c40f;
+    --accent-color: #e74c3c;
+    --background-color: #f7f7f7;
+}
+
+header {
+    background-color: var(--primary-color);
+    padding: 20px;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav li {
+    margin-right: 20px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+    section {
+        padding: 10px;
+    }
+}
